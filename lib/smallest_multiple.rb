@@ -1,21 +1,20 @@
 # Implement your procedural solution here!
 def smallest_multiple(input)
-a=[]
-  b=input
-  while b>0
-    a.push(b)
-    b=b-1
-  end
 
-count=1
-  d=[0]
-until d.length==2
-a.all? do |i|
-  if count%i==0
-    d.unshift(count)
-  end
-  count=count+1
+  a=[]
+   b=input
+    while b>0
+    a.push(b)
+      b=b-1
+    end
+    number=input
+    zzz=[]
+  until zzz.length>0&&zzz.length!=nil
+  if a.all? do |i| number%i==0  end
+        zzz.push(number)
 end
+  number=number+1
 end
-return d[0]
+return zzz[0]
+
   end

@@ -14,13 +14,14 @@ class SmallestMultiple
       b=b-1
     end
     number=@input
-  until number>100000
-      a.all? do |i| number%i==0
-      return number
-    end
+    zzz=[]
+  until zzz.length>0&&zzz.length!=nil
+  if a.all? do |i| number%i==0  end
+        zzz.push(number)
+end
   number=number+1
 end
-
+return zzz[0]
 
   end
 end
